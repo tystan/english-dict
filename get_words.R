@@ -41,6 +41,10 @@ for (i in 1:n_lines) {
 
 # this is the character vector of found words
 dict_words <- whole_dict[kp_list]
+
+# get rid of duplicates
+dict_words <- unique(dict_words)
+
 # how many words? (~100k)
 (n_words <- length(dict_words))
 # size? (~7 MB)
